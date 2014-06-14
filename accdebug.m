@@ -51,5 +51,7 @@ while (1)
     figure(1);
     plot(1:window,graph);
     drawnow;
+    fprintf(fid,'%d,%d\n',graph,index);
+    
 end
 fclose(fid)
